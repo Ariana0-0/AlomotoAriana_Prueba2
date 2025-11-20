@@ -1,14 +1,13 @@
 package aaLaboratorio.aaMutacion;
 
 import java.util.Scanner;
-import aaLaboratorio.aaProterozoico.aaAnimal;
 import aaLaboratorio.aaProterozoico.aaFanerozoico.aaFrog;
 
 public class aaTanqueMutacion {
 
     public aaTanqueMutacion() {}
 
-    public aaFrog iniciarMutacion() {
+    public aaFrog aainiciarMutacion() {
 
         Scanner sc = new Scanner(System.in);
 
@@ -20,11 +19,12 @@ public class aaTanqueMutacion {
             return null;
         }
 
-        System.out.println("\n✔ Autorización aprobada. Iniciando mutación...\n");
+        System.out.println("\n Autorización aprobada. Iniciando mutación...\n");
+        
+        System.out.print("Ingrese su apellido para la mutación: ");
+        String aaapellido = sc.nextLine().trim();
 
-        // ---------------------------
-        //   SPINNER TIPO AMIGO
-        // ---------------------------
+        
         char[] spinner = {'-', '\\', '|', '/'};
         int s = 0;
 
@@ -46,12 +46,14 @@ public class aaTanqueMutacion {
         // ---------------------------
         //   PRESENTACIÓN DEL MUTADO
         // ---------------------------
-        aaFrog frogMutado = new aaFrog("PepitoMutado", "-");
-
-        System.out.println("Hola, soy " + frogMutado.getEspecie() + " y soy una rana.");
-        frogMutado.comer();
+        
+        String aanombreMutado = "Frog" + aaapellido;
+        aaFrog aafrogMutado = new aaFrog(aanombreMutado, "-");
+        System.out.println("Hola, soy " + aafrogMutado.getaaEspecie() + " y soy una rana.");
+        aafrogMutado.aapresentar();
+        aafrogMutado.aacomer();
         System.out.println();
 
-        return frogMutado;
+        return aafrogMutado;
     }
 }

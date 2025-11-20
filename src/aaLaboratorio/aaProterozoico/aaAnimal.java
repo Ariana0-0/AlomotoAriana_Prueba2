@@ -1,23 +1,23 @@
 package aaLaboratorio.aaProterozoico;
 
 public abstract class aaAnimal {
-    private String especie;
-    private String simbolo;
+    private String aaespecie;
+    private String aasimbolo;
 
-    public aaAnimal(String especie, String simbolo) {
-        this.especie = especie;
-        this.simbolo = simbolo;
+    public aaAnimal(String aaespecie, String aasimbolo) {
+        this.aaespecie = aaespecie;
+        this.aasimbolo = aasimbolo;
     }
 
-    public void comer(){
-        System.out.println(getEspecie() + " está comiendo.");
+    public void aacomer(){
+        System.out.println(getaaEspecie() + " está comiendo.");
     }
 
-    protected String getIndentacion(int nivel) {
-        return simbolo.repeat(nivel + 1);
+    protected String getaaIndentacion(int nivel) {
+        return aasimbolo.repeat(nivel + 1);
     }
 
-    public void imprimirArbol(int nivel) {
+    public void aaimprimirArbol(int nivel) {
         // Spinner antes de imprimir
         char[] spin = {'-', '\\', '|', '/'};
         for (int i = 0; i < 8; i++) {
@@ -27,10 +27,10 @@ public abstract class aaAnimal {
 
         // Imprimir con porcentaje 100%
         int guiones = 4 + (nivel * 12);
-        System.out.println("\r|100%|" + "-".repeat(guiones) + " " + getEspecie());
+        System.out.println("\r|100%|" + "-".repeat(guiones) + " " + getaaEspecie());
     }
 
-    public String getEspecie() {
-        return especie;
+    public String getaaEspecie() {
+        return aaespecie;
     }
 }

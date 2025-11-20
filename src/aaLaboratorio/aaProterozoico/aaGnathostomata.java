@@ -1,7 +1,7 @@
 package aaLaboratorio.aaProterozoico;
 
 public class aaGnathostomata extends aaAnimal {
-    public aaGnathostomata(String especie, String simbolo){
-        super(especie, simbolo);
+    public aaGnathostomata(String aaespecie, String aasimbolo){
+        super(aaespecie, aasimbolo);
     }
 }
