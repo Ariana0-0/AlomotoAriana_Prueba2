@@ -7,7 +7,8 @@ public class aaTanqueMutacion {
 
     public aaTanqueMutacion() {}
 
-    public aaFrog aainiciarMutacion() {
+     //Refactorización, se unio en un solo método
+    public aaFrog aaMutacion() {
 
         Scanner sc = new Scanner(System.in);
 

@@ -18,7 +18,7 @@ public class aaController {
             Thread.sleep(500);
 
             aaTanqueMutacion tanque = new aaTanqueMutacion();
-            aaFrog frogMutado = tanque.aainiciarMutacion();
+            aaFrog frogMutado = tanque.aaMutacion();
 
             if (frogMutado == null) {
                 System.out.println("\n❗ No hubo mutación. Manteniendo jerarquía original.");

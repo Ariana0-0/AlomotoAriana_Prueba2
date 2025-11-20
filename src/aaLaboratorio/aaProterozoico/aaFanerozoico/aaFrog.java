@@ -7,6 +7,8 @@ public class aaFrog extends aaAmphibians {
         super(aaespecie, aasimbolo);
         this.aanombre = aaespecie;
     }
+
+    //refactorización de método presentar (se cambio de nombre)
     public void aapresentar(){
         System.out.println("Soy una rana y me llamo " + getaaNombre());
     }

@@ -1,8 +1,9 @@
+//Reactorizacion d etods la clase
 package aaLaboratorio.aaProterozoico;
 
 public abstract class aaAnimal {
     private String aaespecie;
-    private String aasimbolo;
+    private String aasimbolo; //Refactorización 
 
     public aaAnimal(String aaespecie, String aasimbolo) {
         this.aaespecie = aaespecie;
