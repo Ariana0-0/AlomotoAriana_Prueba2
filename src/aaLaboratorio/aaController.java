@@ -79,8 +79,7 @@ public class aaController {
         aafrogMutado.aaimprimirArbol(5);
 
         new aaAmniona("Amniona", "-").aaimprimirArbol(3);
-        aafrogMutado.aapresentar();
-        aafrogMutado.aacomer();
+        
     }
 
 }

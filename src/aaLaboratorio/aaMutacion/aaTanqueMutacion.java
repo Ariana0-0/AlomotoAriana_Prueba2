@@ -20,11 +20,12 @@ public class aaTanqueMutacion {
             return null;
         }
 
-        System.out.println("\n Autorización aprobada. Iniciando mutación...\n");
-        
+
         System.out.print("Ingrese su apellido para la mutación: ");
         String aaapellido = sc.nextLine().trim();
 
+        System.out.println("\n Autorización aprobada. Iniciando mutación...\n");
+    
         
         char[] spinner = {'-', '\\', '|', '/'};
         int s = 0;
@@ -50,7 +51,6 @@ public class aaTanqueMutacion {
         
         String aanombreMutado = "Frog" + aaapellido;
         aaFrog aafrogMutado = new aaFrog(aanombreMutado, "-");
-        System.out.println("Hola, soy " + aafrogMutado.getaaEspecie() + " y soy una rana.");
         aafrogMutado.aapresentar();
         aafrogMutado.aacomer();
         System.out.println();
