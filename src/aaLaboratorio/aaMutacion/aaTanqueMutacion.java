@@ -45,9 +45,6 @@ public class aaTanqueMutacion {
         System.out.println("\n\nMutación completada con éxito.");
         System.out.println("Resultado: FROG mejorado.\n");
 
-        // ---------------------------
-        //   PRESENTACIÓN DEL MUTADO
-        // ---------------------------
         
         String aanombreMutado = "Frog" + aaapellido;
         aaFrog aafrogMutado = new aaFrog(aanombreMutado, "-");

@@ -58,9 +58,6 @@ public class aaController {
 
         new aaAmphibians("Amphibians", "-").aaimprimirArbol(4);
         new aaFrog("Frog", "-").aaimprimirArbol(5);
-
-
-        // Amniona a la misma altura que Tetrapoda, pero después de la rana
         new aaAmniona("Amniona", "-").aaimprimirArbol(3);
        aaFrog aaFrogInicial = new aaFrog("Pepe", "-");
        aaFrogInicial.aapresentar();
